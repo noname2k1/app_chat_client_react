@@ -1,0 +1,26 @@
+.account-modal-body {
+  display: flex;
+  flex-direction: column;
+}
+.account-modal-body .loading {
+  text-align: center;
+}
+.account-modal-body .account-modal-body-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 4px;
+}
+.account-modal-body .account-modal-body-item .account-status {
+  background-color: var(--success-color);
+  border-radius: 4px;
+}
+.account-modal-body .account-modal-body-item .account-status.non-active {
+  background-color: var(--error-color);
+}
+.account-modal-body .account-modal-body-item .active-now {
+  cursor: pointer;
+}
+.account-modal-body .account-modal-body-item .active-now:hover {
+  color: var(--low-color);
+}/*# sourceMappingURL=General.css.map */

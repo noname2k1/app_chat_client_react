@@ -1,0 +1,187 @@
+.profile-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  height: 100vh;
+  position: relative;
+}
+.profile-container .profile-header {
+  margin-top: auto;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.profile-container .profile-header .profile-avatar-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+}
+.profile-container .profile-header .profile-avatar-wrapper .zoom {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  cursor: pointer;
+}
+.profile-container .profile-header .profile-avatar-wrapper .zoom:hover {
+  color: var(--low-color);
+}
+.profile-container .profile-header .profile-avatar-wrapper img {
+  border-radius: 50%;
+  border: 10px solid var(--bg-color-secondary);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+.profile-container .profile-header .profile-avatar-wrapper img:hover ~ .avatar-edit {
+  display: flex;
+}
+.profile-container .profile-header .profile-avatar-wrapper .avatar-edit {
+  position: absolute;
+  display: flex;
+  margin: auto;
+  display: none;
+  cursor: pointer;
+}
+.profile-container .profile-header .profile-avatar-wrapper .avatar-edit:hover {
+  display: flex;
+}
+.profile-container .profile-header .profile-avatar-wrapper input.choose-avatar {
+  position: absolute;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.profile-container .profile-header .profile-avatar-wrapper.zoom-out {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  width: auto;
+  inset: 0;
+}
+.profile-container .profile-header .profile-avatar-wrapper.zoom-out img {
+  border: 80px solid var(--bg-color-secondary);
+  box-shadow: unset;
+  cursor: pointer;
+  height: 100vh;
+  border: unset;
+  border-radius: unset;
+}
+.profile-container .profile-header .profile-avatar-preview {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 150px;
+}
+.profile-container .profile-header .profile-avatar-preview .zoom {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  cursor: pointer;
+}
+.profile-container .profile-header .profile-avatar-preview .zoom:hover {
+  color: var(--low-color);
+}
+.profile-container .profile-header .profile-avatar-preview img {
+  border-radius: 50%;
+  border-radius: 50%;
+  border: 10px solid var(--bg-color-secondary);
+  box-shadow: var(--box-shadow);
+}
+.profile-container .profile-header .profile-avatar-preview.zoom-out {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  inset: 0;
+  width: auto;
+}
+.profile-container .profile-header .profile-avatar-preview.zoom-out img {
+  border: 80px solid var(--bg-color-secondary);
+  box-shadow: unset;
+  cursor: pointer;
+  height: 100vh;
+  border: unset;
+  border-radius: unset;
+}
+.profile-container .profile-body {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+}
+.profile-container .profile-body .profile-body-details {
+  transform: translateX(0);
+  visibility: visible;
+  transition: all 0.2s ease-in-out;
+}
+.profile-container .profile-body.form .profile-body-form {
+  transform: translateX(0);
+  visibility: visible;
+}
+.profile-container .profile-body.form .profile-body-details {
+  transform: translateX(100%);
+  visibility: hidden;
+}
+.profile-container .profile-body .profile-body-details {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-container .profile-body .profile-body-details .profile-body-item {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+}
+.profile-container .profile-body .profile-body-details .profile-body-item.profile-name {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 10px;
+}
+.profile-container .profile-body .profile-body-form {
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+.profile-container .profile-body .profile-body-form .profile-body-item {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.profile-container .profile-body .profile-body-form .profile-body-item input,
+.profile-container .profile-body .profile-body-form .profile-body-item select {
+  padding: 4px 10px;
+  outline: none;
+  border: 1px solid var(--border-color);
+}
+.profile-container .profile-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+}
+.profile-container .profile-footer .profile-footer-item {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 2.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.profile-container .profile-footer .profile-footer-item:hover {
+  color: var(--low-color);
+}/*# sourceMappingURL=Profile.css.map */

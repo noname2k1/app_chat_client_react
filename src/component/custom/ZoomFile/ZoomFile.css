@@ -1,0 +1,147 @@
+.zoom-file-container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  background-color: var(--overlay-bg);
+}
+.zoom-file-container .zoom-file-wrapper {
+  width: 80%;
+  height: 90%;
+  background-color: var(--bg-color-secondary);
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+}
+.zoom-file-container .zoom-file-wrapper .header {
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+.zoom-file-container .zoom-file-wrapper .header .header-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+}
+.zoom-file-container .zoom-file-wrapper .header .header-list .header-item {
+  color: var(--text-color);
+  margin-right: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+.zoom-file-container .zoom-file-wrapper .header .header-list .header-item:last-child {
+  margin-right: 20px;
+}
+.zoom-file-container .zoom-file-wrapper .header .header-list .header-item:hover {
+  color: var(--blue-color);
+}
+.zoom-file-container .zoom-file-wrapper .header .header-list .header-item.disabled {
+  color: var(--lower-color);
+  cursor: default;
+}
+.zoom-file-container .zoom-file-wrapper .header .header-list .header-item.disabled:hover {
+  color: var(--lower-color);
+}
+.zoom-file-container .zoom-file-wrapper .main {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.zoom-file-container .zoom-file-wrapper .main .main-item {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-file-container .zoom-file-wrapper .main .main-item img, .zoom-file-container .zoom-file-wrapper .main .main-item video {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+}
+.zoom-file-container .zoom-file-wrapper .main .next,
+.zoom-file-container .zoom-file-wrapper .main .previous {
+  position: absolute;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.zoom-file-container .zoom-file-wrapper .main .next:hover,
+.zoom-file-container .zoom-file-wrapper .main .previous:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+.zoom-file-container .zoom-file-wrapper .main .next {
+  right: 0;
+  margin-right: 30px;
+}
+.zoom-file-container .zoom-file-wrapper .main .previous {
+  left: 0;
+  margin-left: 30px;
+}
+.zoom-file-container .zoom-file-wrapper .footer {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-file-container .zoom-file-wrapper .footer ul {
+  list-style: none;
+}
+.zoom-file-container .zoom-file-wrapper .footer ul.list {
+  height: 50%;
+  margin: 0;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+.zoom-file-container .zoom-file-wrapper .footer ul.list::-webkit-scrollbar {
+  height: 5px;
+  cursor: pointer;
+}
+.zoom-file-container .zoom-file-wrapper .footer ul.list::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+.zoom-file-container .zoom-file-wrapper .footer ul.list::-webkit-scrollbar-thumb {
+  background: var(--lower-color);
+  border-radius: 10px;
+}
+.zoom-file-container .zoom-file-wrapper .footer ul.list::-webkit-scrollbar-thumb:hover {
+  background: var(--blue-color);
+}
+.zoom-file-container .zoom-file-wrapper .footer ul.list li.item {
+  height: 100%;
+  min-width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  opacity: 0.5;
+}
+.zoom-file-container .zoom-file-wrapper .footer ul.list li.item.current-item {
+  opacity: 1;
+  border: 2px solid var(--blue-color);
+}
+.zoom-file-container .zoom-file-wrapper .footer ul.list li.item:hover {
+  background-color: var(--bg-color-secondary);
+}
+.zoom-file-container .zoom-file-wrapper .footer ul.list li.item.selected {
+  background-color: var(--lower-color);
+  cursor: default;
+}/*# sourceMappingURL=ZoomFile.css.map */

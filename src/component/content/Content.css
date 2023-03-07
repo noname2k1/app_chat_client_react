@@ -1,0 +1,226 @@
+.content-container {
+  flex: 1;
+  background-color: var(--bg-color-secondary);
+  color: var(--text-color);
+  position: relative;
+}
+.content-container.yellow {
+  background-color: var(--yellow-color);
+}
+.content-container.green {
+  background-color: var(--green-color);
+}
+.content-container.red {
+  background-color: var(--red-color);
+}
+.content-container.orange {
+  background-color: var(--orange-color);
+}
+.content-container.purple {
+  background-color: var(--purple-color);
+}
+.content-container.pink {
+  background-color: var(--pink-color);
+}
+.content-container.teal {
+  background-color: var(--teal-color);
+}
+.content-container.blue {
+  background-color: var(--blue-color);
+}
+.content-container.gray {
+  background-color: var(--gray-color);
+}
+.content-container.deep-blue {
+  background-color: var(--deep-blue-color);
+}
+.content-container.middle-blue {
+  background-color: var(--middle-blue-color);
+}
+.content-container .content-header {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+}
+.content-container .content-header .message-container {
+  margin-left: 10px;
+  display: flex;
+}
+.content-container .content-header .message-container .account-avatar {
+  position: relative;
+  overflow: visible;
+  box-shadow: var(--box-shadow);
+}
+.content-container .content-header .message-container .account-avatar img {
+  border-radius: 50%;
+  min-height: 60px;
+}
+.content-container .content-header .message-container .account-avatar .active-status {
+  position: absolute;
+  top: 69%;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  background-color: var(--offline-bg);
+}
+.content-container .content-header .message-container .account-avatar .active-status.online {
+  background-color: var(--online-bg);
+}
+.content-container .content-header .message-container .other-user-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+.content-container .content-header .message-container .other-user-text .message-name {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.content-container .content-header .message-container .other-user-text .room-id {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.content-container .content-header .message-container .other-user-text .room-id .copy-id {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-container .content-header .message-feature {
+  display: flex;
+}
+.content-container .content-header .message-feature button {
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+}
+.content-container .content-header .message-feature button:hover, .content-container .content-header .message-feature button.active {
+  border-radius: 50%;
+  background-color: var(--lower-color);
+}
+.content-container .content-header .requests-table {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 500px;
+  transition: width 0.3s ease;
+  background: var(--bg-color);
+  padding: 4px 4px 0;
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+}
+.content-container .content-header .requests-table.shrink {
+  width: 60px;
+}
+.content-container .content-header .requests-table.shrink .request-list {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.content-container .content-header .requests-table .request-list {
+  max-width: 100%;
+  max-height: 70vh;
+  overflow-y: auto;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.content-container .content-header .requests-table .request-list::-webkit-scrollbar {
+  width: 4px;
+}
+.content-container .content-header .requests-table .request-list::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+.content-container .content-header .requests-table .request-list::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+.content-container .content-header .requests-table .request-list::-webkit-scrollbar-thumb:hover {
+  background: var(--lower-color);
+}
+.content-container .content-header .requests-table .request-list .request-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+.content-container .content-header .requests-table .request-list .request-item a {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+.content-container .content-header .requests-table .request-list .request-item a .request-item-avatar {
+  min-width: 50px;
+  max-width: 50px;
+  height: 50px;
+}
+.content-container .content-header .requests-table .request-list .request-item a .request-item-name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 10px;
+}
+.content-container .content-header .requests-table .request-list .request-item .request-item-options {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: flex-end;
+}
+.content-container .content-header .requests-table .request-list .request-item .request-item-options .request-option {
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.content-container .content-header .requests-table .request-list .request-item .request-item-options .request-option.accept {
+  background-color: var(--success-color);
+  color: var(--bg-color);
+  margin-right: 4px;
+}
+.content-container .content-header .requests-table .request-list .request-item .request-item-options .request-option.accept:hover {
+  filter: brightness(0.8);
+}
+.content-container .content-header .requests-table .request-list .request-item .request-item-options .request-option.deny {
+  background-color: var(--error-color);
+  color: var(--bg-color);
+}
+.content-container .content-header .requests-table .request-list .request-item .request-item-options .request-option.deny:hover {
+  filter: brightness(0.8);
+}
+.content-container .content-header .requests-table .request-item-options {
+  display: flex;
+  align-items: center;
+}
+.content-container .content-header .requests-table .expand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.content-container .content-header .requests-table .expand:hover {
+  opacity: 1;
+}
+.content-container .content-header .requests-table .expand:hover svg {
+  filter: brightness(0.8);
+}
+.content-container .content-header .requests-table .expand .requests-count {
+  color: var(--error-color);
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 1;
+}
+.content-container .content-body {
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=Content.css.map */

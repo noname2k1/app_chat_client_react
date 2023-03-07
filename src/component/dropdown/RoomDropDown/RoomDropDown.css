@@ -1,0 +1,77 @@
+.background-table {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  cursor: default;
+  transition: height 0.4s ease;
+  overflow-y: auto;
+}
+.background-table.active {
+  height: 240px;
+  visibility: visible;
+  opacity: 1;
+}
+.background-table::-webkit-scrollbar {
+  width: 0;
+}
+.background-table .color-outside {
+  cursor: pointer;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background-table .color-outside .color-inside {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: var(--bg-color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background-table .color-outside .color-inside.yellow {
+  background-color: var(--yellow-color);
+}
+.background-table .color-outside .color-inside.green {
+  background-color: var(--green-color);
+}
+.background-table .color-outside .color-inside.red {
+  background-color: var(--red-color);
+}
+.background-table .color-outside .color-inside.orange {
+  background-color: var(--orange-color);
+}
+.background-table .color-outside .color-inside.purple {
+  background-color: var(--purple-color);
+}
+.background-table .color-outside .color-inside.pink {
+  background-color: var(--pink-color);
+}
+.background-table .color-outside .color-inside.teal {
+  background-color: var(--teal-color);
+}
+.background-table .color-outside .color-inside.blue {
+  background-color: var(--blue-color);
+}
+.background-table .color-outside .color-inside.gray {
+  background-color: var(--gray-color);
+}
+.background-table .color-outside .color-inside.deep-blue {
+  background-color: var(--deep-blue-color);
+}
+.background-table .color-outside .color-inside.middle-blue {
+  background-color: var(--middle-blue-color);
+}
+.background-table .color-outside .color-inside:hover {
+  filter: brightness(0.8);
+}/*# sourceMappingURL=RoomDropDown.css.map */

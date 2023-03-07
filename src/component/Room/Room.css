@@ -1,0 +1,136 @@
+.room-container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s linear;
+  z-index: 1;
+}
+.room-container .room-wrapper {
+  z-index: 10000;
+  width: 50vw;
+  height: 400px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.room-container .room-wrapper .room-item-header {
+  height: 15%;
+  display: flex;
+  align-items: center;
+}
+.room-container .room-wrapper .room-item-header .room-item-header-item {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-color-secondary);
+  cursor: pointer;
+}
+.room-container .room-wrapper .room-item-header .room-item-header-item:first-child {
+  border-right: 1px solid var(--border-color);
+}
+.room-container .room-wrapper .room-item-header .room-item-header-item:hover {
+  background-color: var(--dropdown-hover-bg);
+}
+.room-container .room-wrapper .room-item-header .room-item-header-item.active {
+  background-color: var(--bg-color);
+  border-bottom: none;
+  cursor: default;
+  font-weight: 700;
+}
+.room-container .room-wrapper .room-item-body {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.room-container .room-wrapper .room-item-body input {
+  width: 80%;
+  height: 10%;
+  padding: 4px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.room-container .room-wrapper .room-item-body .results-room-list {
+  width: 80%;
+  list-style: none;
+  display: flex;
+  flex: 1;
+  overflow-y: auto;
+}
+.room-container .room-wrapper .room-item-body .results-room-list .room-item {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.room-container .room-wrapper .room-item-body .results-room-list .room-item a {
+  flex: 1;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+.room-container .room-wrapper .room-item-body .results-room-list .room-item a .room-item-avatar {
+  width: 50px;
+  height: 50px;
+}
+.room-container .room-wrapper .room-item-body .results-room-list .room-item a .room-item-name {
+  margin: 0 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.room-container .room-wrapper .room-item-body .results-room-list .room-item a .member-count {
+  display: flex;
+  align-items: center;
+}
+.room-container .room-wrapper .room-item-body .results-room-list .room-item .send-request,
+.room-container .room-wrapper .room-item-body .results-room-list .room-item .requested {
+  background: var(--online-bg);
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.room-container .room-wrapper .room-item-body .results-room-list .room-item .send-request:hover,
+.room-container .room-wrapper .room-item-body .results-room-list .room-item .requested:hover {
+  background: var(--success-color);
+}
+.room-container .room-wrapper .room-item-body .results-room-list .room-item .requested {
+  background: var(--offline-bg);
+}
+.room-container .room-wrapper .room-item-body .results-room-list .room-item .requested:hover {
+  background: var(--disabled-bg);
+}
+.room-container .room-wrapper .room-item-body .create-room__button {
+  margin-bottom: 20%;
+  border: 1px solid #000;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: var(--bg-color-secondary);
+  color: var(--text-color);
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.room-container .room-wrapper .room-item-body .create-room__button:hover {
+  color: var(--bg-color);
+  background-color: var(--text-color);
+}
+.room-container .room-wrapper .room-item-body .error-message {
+  color: var(--error-color);
+  font-weight: 700;
+  font-size: 2rem;
+}/*# sourceMappingURL=Room.css.map */

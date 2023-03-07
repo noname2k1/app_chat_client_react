@@ -1,0 +1,48 @@
+.lockroom-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color-secondary);
+  color: var(--text-color);
+}
+.lockroom-container.yellow {
+  background-color: var(--yellow-color);
+}
+.lockroom-container.green {
+  background-color: var(--green-color);
+}
+.lockroom-container.red {
+  background-color: var(--red-color);
+}
+.lockroom-container.orange {
+  background-color: var(--orange-color);
+}
+.lockroom-container.purple {
+  background-color: var(--purple-color);
+}
+.lockroom-container.pink {
+  background-color: var(--pink-color);
+}
+.lockroom-container.teal {
+  background-color: var(--teal-color);
+}
+.lockroom-container.blue {
+  background-color: var(--blue-color);
+}
+.lockroom-container.gray {
+  background-color: var(--gray-color);
+}
+.lockroom-container.deep-blue {
+  background-color: var(--deep-blue-color);
+}
+.lockroom-container.middle-blue {
+  background-color: var(--middle-blue-color);
+}
+.lockroom-container .body .lock {
+  font-size: 10rem;
+  text-align: center;
+}/*# sourceMappingURL=LockRoom.css.map */

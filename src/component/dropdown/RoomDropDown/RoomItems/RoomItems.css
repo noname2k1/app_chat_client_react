@@ -1,0 +1,43 @@
+.room-item-container {
+  inset: 0;
+  position: fixed;
+  background-color: var(--overlay-bg);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.room-item-container .room-item-wrapper {
+  width: 600px;
+  height: 80vh;
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+  color: var(--text-color);
+  border-radius: 4px;
+}
+.room-item-container .room-item-wrapper header.room-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+  font-size: large;
+}
+.room-item-container .room-item-wrapper header.room-item-header .header-text {
+  text-align: center;
+  flex: 1;
+}
+.room-item-container .room-item-wrapper header.room-item-header .close {
+  position: absolute;
+  cursor: pointer;
+  padding: 10px;
+  right: 0;
+  transition: transform 0.2s ease-in-out;
+}
+.room-item-container .room-item-wrapper header.room-item-header .close:hover {
+  color: var(--low-color);
+}
+.room-item-container .room-item-wrapper .room-item-body {
+  height: 90%;
+}/*# sourceMappingURL=RoomItems.css.map */
