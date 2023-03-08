@@ -36,6 +36,8 @@ const ProtectedRoute = ({ children }) => {
     const isAuthenticated = useAuthSelector().isAuthenticated;
     if (isAuthenticated) {
         return children;
+    } else {
+        return <Navigate to='/auth' replace />;
     }
 };
 
