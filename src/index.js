@@ -14,8 +14,7 @@ import NoRoom from './component/content/NoRoom/NoRoom';
 import Profile from './component/auth/Profile/Profile';
 import CallContextProvider from './component/Call/callContext';
 import Error404 from './page/Error404';
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
     // <React.StrictMode>
     <GlobalStyle>
         <BrowserRouter>
